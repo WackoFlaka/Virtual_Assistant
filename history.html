@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <title>Virtual Assistant | History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" href="Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body onscroll="animateIfInView()">
+      <div class="mobile-container">
+      <div class="topnav">
+
+        <div id="myLinks">
+        <a class="nav-link nav-link-ltr"href="home.html">Home</a>
+        <a class="nav-link nav-link-ltr active" href="history.html">History</a>
+        <a class="nav-link nav-link-ltr" href="futuretech.html">Future Technology</a>
+        <a class="nav-link nav-link-ltr"href="break.html">Breakthrough</a>
+        <a class="nav-link nav-link-ltr"href="cons.html">Consequences</a>
+      </div>
+        <div class="iconbutton">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    </div>
+  </div>
+        <div class="backgroundnav-img wow wow-in-view">
+            <div class="container">
+               
+            </div>
+
+                
+   
+     
+                <h1 title="History" class="scroll">History</h1>
+       
+
+            
+                 
+           
+            </div>
+            </div>
+  
+
+            
+            <div class="timeline">
+                
+                <div class="contain left">
+                  <div class="cont">
+                    <h2>1961</h2>
+                    <p>IBM creates the first digital speech recognizer, the IBM Shoebox which recognized 16 words and 9 digits.</p>
+                    <img src="IMB.jpg" width="40%">
+                  </div>
+                </div>
+                <div class="contain right">
+                  <div class="cont">
+                    <h2>1976</h2>
+                    <p>The Harpy Program was created by Carnegie Mellon. Harpy could understand 1000 words.</p>
+                    <img src="harpy.jpg" width="40%">
+                  </div>
+                </div>
+                <div class="contain left">
+                  <div class="cont">
+                    <h2>1997</h2>
+                    <p>The company Dragon had launched Dragon Dictate, the first speech recognition</p>
+                    <img src="DragonLogo.gif" width="40%">
+                  </div>
+                </div>
+                <div class="contain right">
+                  <div class="cont">
+                    <h2>1997 - 2000</h2>
+                    <p>Microsoft releases Clippy, their first VA. It was later removed in 2000.</p>
+                    <img src="Clippy.png" width="40%">
+                  </div>
+                </div>
+                <div class="contain left">
+                  <div class="cont">
+                    <h2>2003</h2>
+                    <p>Microsoft introduced a speech recognition as a new feature for Office XP.</p>
+                    <img src="OfficeXP.png" width="40%">
+                  </div>
+                </div>
+                <div class="contain right">
+                  <div class="cont">
+                    <h2>2011</h2>
+                    <p>Apple introduced Siri, the first modern digital virtual assistant to be installed on a smartphone, a new feature that came out on the iPhone S4.</p>
+                    <img src="Siri.gif" width="40%">
+                  </div>
+                </div>
+                <div class="contain left">
+                  <div class="cont">
+                  <h2>2012</h2>
+                  <p>Google launched a feature called Google Now, an app for Android and IOS.</p>
+                  <img src="Google_Now_logo.png" width="40%">
+                </div>
+                </div>
+
+                <div class="contain right">
+                  <div class="cont">
+                  <h2>2014</h2>
+                  <p>Mircosoft introduced Cortana, their first VA.</p>
+                  <img src="Cortana.gif" width="40%">
+                </div>
+                </div>
+
+                <div class="contain left">
+                  <div class="cont">
+                  <h2>2014 - 2016</h2>
+                  <p>Amazon has introduced a virtual assistant, Alexa. In March 2016, they released a byproduct called Amazon Echo Dot.</p>
+                  <img src="BannerVA.gif" width="40%">
+                </div>
+                </div>
+
+                <div class="contain right">
+                  <div class="cont">
+                  <h2>2016</h2>
+                  <p>Google introduced Google Assistant and launched Google Home.</p>
+                  <img src="Google.png" width="40%">
+                </div>
+                </div>
+
+                <div class="contain left">
+                  <div class="cont">
+                  <h2>2017</h2>
+                  <p>Amazon released the 2nd generation of the Amazon Echo Dot.</p>
+                  <img src="Alexa2.gif" width="40%">
+                </div>
+                </div>
+
+                <div class="contain right">
+                  <div class="cont">
+                  <h2>2017</h2>
+                  <p>Samsung introduced Bixby, a new feature on the Galaxy S8 release. </p>
+                  <img src="Bixby.jpg" width="40%">
+                </div>
+                </div>
+              </div>
+                
+            <div class="footer">
+                <a href="#" id="backToTop" title="back to top" class="wow">^</a>
+            </div>
+          
+        <script>
+function animateIfInView() {
+  $.each($('.wow'), function(key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    } else {
+      // (Optional) Fade out when out of view
+      $(value).removeClass('wow-in-view');
+    };
+  });
+}
+
+
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= 300 + (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+        </script>
+        </body>
+        
+    </body>
+</html>

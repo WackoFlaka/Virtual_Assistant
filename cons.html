@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <title>Virtual Assistant | Consequences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cons.css">
+    <link rel="icon" href="Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body onscroll="animateIfInView()">
+      <div class="mobile-container">
+        <div class="topnav">
+
+          <div id="myLinks">
+            <a class="nav-link nav-link-ltr"href="home.html">Home</a>
+            <a class="nav-link nav-link-ltr" href="history.html">History</a>
+            <a class="nav-link nav-link-ltr" href="futuretech.html">Future Technology</a>
+            <a class="nav-link nav-link-ltr"href="break.html">Breakthrough</a>
+            <a class="nav-link nav-link-ltr active"href="#consequences">Consequences</a>
+          </div>
+          <div class="iconbutton">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+      </div>
+        <div class="backgroundnav-img wow wow-in-view">
+            <div class="container">
+            </div>
+                <h1 title="Consequences">Consequences</h1>
+            </div>
+
+            <div class="grid-container">  
+          <div class="content">
+             
+                 
+                      <h2>Pros</h2>
+                      <li>Possibility of creating a more efficent society.</li>
+                      <li>VAs in the workplace is expanding at a rapid rate, which may hit 100% of workers soon.</li>
+                      <li>These VAs may automate tasks at a rate that increases worker productivity may mean that said workers do less and thus work less often.</li>
+                      <li>If VAHH are built, then it would come with the added benefit of creating later of standardization and safety in homes. These systems could be maintained easier than ever, and a VAHH would know how to prevent unsafe situations.</li>
+                      <li>This further opens time for them to work more, gain more money, expand the economy, complete schoolwork, along with a wide variety of other effects.</li>
+
+             
+                    <h2>Cons</h2>
+                      <li>Have a high risk with development and implementations, requires planning, failsafes, and other control mechanisms.</li>
+                      <li>Hacking is a very high risk, no virtual assistant will be completely hack-proof.</li>
+                      <li>If the tech isn't secure, multiple virtual assistants could work against people and cause major damages.</li>
+                      <li>Changes society as this causes complete alternations to individual's views of the world.</li>
+                      <li>The public would have less jobs and reduces the amount of working citizens.</li>
+               
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer">
+                <a href="#" id="backToTop" title="back to top" class="wow">^</a>
+            </div>
+
+            <script>
+
+function animateIfInView() {
+  $.each($('.wow'), function(key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    } else {
+      // (Optional) Fade out when out of view
+      $(value).removeClass('wow-in-view');
+    };
+  });
+}
+
+
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= 300 + (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+            </script>
+    </body>
+</html>

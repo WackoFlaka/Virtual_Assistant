@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <title>Virtual Assistant | Future Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="futuretech.css">
+    <link rel="icon" href="Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body onscroll="animateIfInView()">
+      <div class="mobile-container">
+        <div class="topnav">
+
+            <div id="myLinks">
+            <a class="nav-link nav-link-ltr" href="home.html">Home</a>
+            <a class="nav-link nav-link-ltr" href="history.html">History</a>
+            <a class="nav-link nav-link-ltr active" href="futuretech.html">Future Technology</a>
+            <a class="nav-link nav-link-ltr" href="break.html">Breakthrough</a>
+            <a class="nav-link nav-link-ltr" href="cons.html">Consequences</a>
+          </div>
+          
+          <div class="iconbutton">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+      </div>
+        <div class="backgroundnav-img wow wow-in-view">
+
+                <h1 title="Future Technology" class="scroll">Future Technology</h1>
+
+            </div>
+        </div>
+       
+<div class="content">
+  <div class="center">
+  <img src="FutureBanner.gif" class="photo">
+</div>
+<ul class="circle">
+  <li><p>The Virtual Assistant Household Helper (VAHH) is a potiential expansion of the abilities of VAs into everyday homes that would improve the lives of people in as many way as possible.</p></li>
+  <li><p>VA will be built into the home, one that is wired to several microphones, speakers, and cameras that allow it to communicate to the home's residents.</p></li>
+  <li><p>A VA is currently capable of are available through this system, only throughtout the entire home.</p></li>
+  <li><p>THE VAHH will have built-in internent access due to the ability of the VA to use internent resources.</p></li>
+  <li><p>VAHH will listen to the user and coordinate maintenance tasks aong with doing tasks that the residents ask it to do.</p></li>
+  <li><p>It will intruct the robots to do certain tasks, and the robots will be individual units that perform the given tasks.</p></li>
+  <li><p>VAs are computers that we can ask questions and get accurate responses. VA may be able to substitute for a teacher.</p></li>
+  <li><p>VAs is giving them the same intelligence as humans, with abstract thinking abilities.</p></li>
+
+  <div class="center">
+  <img src="Sound.gif" width="50%" class="photo">
+</div>
+  <li><p>The VAHH could be capable of being a mentor or teacher to its residents, which could influence how it is built.</p></li>
+  <li><p>VAHHs may built-in learning spaces to complement this idea, allowing residents to learn from home or be fully homeschooled while still getting an effective eduction.</p></li>
+  <li><p>VAHH would not only be a conveniece to its residets, but it would save them time and money from all the normal maintenace the residents would do in favor of the VAHH doing these tasks instead.</p></li>
+  <li><p>With all these advancements, the residents would be more exonomically stable and it would help the economy.</p></li>
+</ul>
+
+
+</div>
+
+
+<div class="footer">
+  <a href="#" id="backToTop" title="back to top" class="wow">^</a>
+  </div>
+
+
+
+            <script>
+                function animateIfInView() {
+  $.each($('.wow'), function(key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    } else {
+      // (Optional) Fade out when out of view
+      $(value).removeClass('wow-in-view');
+    };
+  });
+}
+
+
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= 300 + (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+            </script>
+    </body>
+</html>

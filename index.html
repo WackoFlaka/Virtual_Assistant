@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <title>Virtual Assistant | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body onscroll="animateIfInView()">
+      <div class="mobile-container">
+      <div class="topnav">
+       <p></p>
+        <div id="myLinks">
+        <a class="nav-link nav-link-ltr active"href="#home">Home</a>
+        <a class="nav-link nav-link-ltr" href="history.html">History</a>
+        <a class="nav-link nav-link-ltr" href="futuretech.html">Future Technology</a>
+        <a class="nav-link nav-link-ltr" href="break.html">Breakthrough</a>
+        <a class="nav-link nav-link-ltr" href="cons.html">Consequences</a>
+      </div>
+      <div class="iconbutton">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      </div>
+        
+    </div>
+  </div>
+        <div class="backgroundnav-img wow wow-in-view">
+          
+
+                <h1 title="Virtual Assistant" class="scroll">Virtual Assistant</h1>
+
+            </div>
+
+  
+            <div class="gradient">
+              <div class="content">
+                <img src="Artificial.gif" class="banner wow" width="300px" height="300px">
+                <h2 class="wow" style="transition-delay: 0ms;">What is Artificial Intelligence?</h2>
+                <p class="wow info bn" style="transition-delay: 0ms;"> 
+
+                  An Artificial Intelligence, or AI, is any computer program that replicates a form of intelligence. Most use complex algorithms and a large set of data to make decisions. A form of AI more crucial to Virtual Assistants are known as “narrow AI”. These Ais are very efficient at precise tasks, but they lack the ability to generalize and be abstract like humans. </p>
+
+                  <div class="wow">
+                  <img src="BannerVA.gif" class="banner">
+                </div>
+                <h2 class="wow" style="transition-delay: 0ms">What is Virtual Assistance?</h2>
+                <p class="wow info" style="transition-delay: 0ms;">A Virtual Assistant, or VA, is a form of AI that uses data gathered over time along with several complex algorithms to form intelligent responses to human questions. They use language processing, process automation, machine learning, and the internet to gather more information. They also gather information and develop patterns from their users to form better answers. They stem off of the narrow AI mentioned above, and are the basis of what this site talks about. For more information, <a href="https://docs.google.com/document/d/1aSHyyuF04B4fD52gB7LRPPJxoadAYZReeSpzsYm-KtQ/edit?usp=sharing">click here!</a></p></p>
+
+                  <div class="footer">
+                <a href="#" id="backToTop" title="back to top" class="wow">^</a>
+              </div>
+              </div>
+
+
+              <footer>
+
+              </footer>
+            </div>
+
+        <script>
+function animateIfInView() {
+  $.each($('.wow'), function(key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    } else {
+      // (Optional) Fade out when out of view
+      $(value).removeClass('wow-in-view');
+    };
+  });
+}
+
+
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= 300 + (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+        </script>
+        </body>
+      
+
+    </body>
+</html>

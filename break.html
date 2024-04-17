@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <title>Virtual Assistant | Break Through</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="break.css">
+    <link rel="icon" href="Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body onscroll="animateIfInView()">
+      <div class="mobile-container">
+        <div class="topnav">
+
+          <div id="myLinks">
+            <a class="nav-link nav-link-ltr"href="home.html">Home</a>
+            <a class="nav-link nav-link-ltr" href="history.html">History</a>
+            <a class="nav-link nav-link-ltr" href="futuretech.html">Future Technology</a>
+            <a class="nav-link nav-link-ltr active"href="#breakthru">Breakthrough</a>
+            <a class="nav-link nav-link-ltr"href="cons.html">Consequences</a>
+            </div>
+            <div class="iconbutton">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              </div>
+        </div>
+      </div>
+        <div class="backgroundnav-img wow wow-in-view">
+            <div class="container">
+            </div>
+                <h1 title="Breakthrough">Breakthrough</h1>
+            </div>
+
+            <div class="content">
+              <div class="banner wow">
+                <img src="SmartHome2.gif" width="20%" class="size">
+              </div>
+              <p class="wow" style="transition-delay: 0ms;">The VAHH is a very advanced VA and would require a number of technological breakthroughs. The breakthroughs that it would require include Ethical understanding. Adaptive learning, and Problem Solving. <br><br></p>
+
+              <p class="wow" style="transition-delay: 0ms;">Ethical implementation of VAs is crucial to whether they will ever be developed, thus the ethical problems they face must be solved. There are several ethical principles that VAs need to follow, which include making them follow transparency, justice and fairness, non-maleficence, responsibility and intergrity, and privacy. Violations in any of these ethicial principles could interface with the VAHH ever jbeing viable, so it is important to understand what needs to be interfere with the VAHH ever being viable, so it is important to understand what needs to be done to fix these problems. <br><br></p>
+
+              <p class="wow" style="transition-delay: 0ms;">In order for the VA to be able to interact with people on a daily basis it needs to be able to learn. If we integrate adaptive learning into the VA it could learn from its conversations with the home owner and change how it acts to better suit the inhabitants. In order to do this it needs to learn mappings between verbal commands and basic actions. After it learns this it can piece together verbal commands and understand more complex interactions.<br><br></p>
+
+              <p class="wow" style="transition-delay: 0ms;">As of now, VAs cannot do anything without already knowing how. If the Ai of the VA could use problem sloving skills and make educated decisions its capabilities would be vastly improvoed. Currently we have the technology to make an AI that is better than us at simple things like a specific task. But, that same AI would have no skill at a different task even if it was only slightly different. This is because it is only coded to interact with that specific task, and when put in a seperate one it would try to perform the same actions and would ultimately fail.<br><br></p>
+
+                <div class="banner wow">
+                <img src="SmartHome.jpg" width="30%" class="size">
+              </div>
+
+              <p class="wow" style="transition-delay: 0ms;">To make the VAHH function and connect would require a specialized system that works specifically for the VA inside. This sort of system already exists on a small scale in simple VA techs such as Amazon Alexa or Apple Siri which can be programmed to control other smart devices. You would need speakers and microphones throughout the house to communicate with the VA, and you would need to connect the VA to any appliances that you want the VA to be able to control.<br><br</p>
+
+              <p class="wow" style="transition-delay: 0ms;">The infrastructure breakthrough would be the step needed to start building a VAHH. All the components already exist, though the development of said homes will be expensive, certainly more than most homes cost today. For this technology, several market costs need to be reduced or stabilzed.<br><br></p>
+
+              <p class="wow" style="transition-delay: 0ms;">To investigate how this system could work, we designed a potential experiment to test how this technology would work in the VAHH and how to use it. First, the development company or organization that begins the project should start with a single room connected to the VA. This room should have everything the proposed homes of the future need. This alone may be expensive, but it makes the first step in determining how the construction would work.<br><br</p>
+
+              <p class="wow" style="transition-delay: 0ms;">If this development works, the company could survey the people who visit the project and get feedback. Using this feedback, they can develop a full VAHH using the knowledge and developments from the single-room experiment. This house could be rented or even just shown as an open house to many people to upscale the project in a realistic way. This experiment would prove that the technology is possible, and it would show that people are willing to invest in these homes, which would make this development a reality.</p>
+            </div>
+            
+            <div class="footer">
+              <a href="#" id="backToTop" title="back to top" class="wow">^</a>
+            </div>
+
+            <script>
+
+function animateIfInView() {
+  $.each($('.wow'), function(key, value) {
+    if (isElementInViewport($(value))) {
+      $(value).addClass('wow-in-view');
+    } else {
+      // (Optional) Fade out when out of view
+      $(value).removeClass('wow-in-view');
+    };
+  });
+}
+
+
+function isElementInViewport(el) {
+
+  //special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= 300 + (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+            </script>
+    </body>
+</html>
